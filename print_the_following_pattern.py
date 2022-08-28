@@ -1,7 +1,5 @@
 n=int(input())
-n1=n
-for i in range(n1):
-    for j in range(1,n+1,1):
-        print(j,end='')
+for i in range(n):
+    for j in range(n,0,-1):
+        print(j,end=" ")
     print()
-    n-=1
