@@ -1,15 +1,15 @@
 n1=int(input())
 n2=int(input())
-c=0
 i=1
-t=n1+n2
+c=0
 while True:
-    for j in range(1,t+i+1,1):
-        if (t+i)%j==0:
+    t=n1+n2+i
+    for j in range(1,t+1,1):
+        if t%j==0:
             c+=1
-    if c<=2:
+    if c==2:
         print(i)
         break
     else:
-        c=0
         i+=1
+        c=0
