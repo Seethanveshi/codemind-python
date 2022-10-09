@@ -1,11 +1,8 @@
 n=int(input())
-l=[]
-s=()
-for i in str(n):
-    l.append(i)
-t=len(l)
-t1=len(set(l))
-if t==t1:
+s=str(n)
+t1=len(s)
+t2=len(set(s))
+if t1==t2:
     print("Unique Number")
 else:
     print("Not Unique Number")
